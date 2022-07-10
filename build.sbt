@@ -1,6 +1,6 @@
 ThisBuild / scalaVersion     := "3.1.3"
 ThisBuild / version          := "0.1.0-SNAPSHOT"
-ThisBuild / organization     := "com.alphabooks.commons"
+ThisBuild / organization     := "com.alphabooks"
 ThisBuild / organizationName := "Alpha Book"
 
 lazy val root = (project in file("."))
@@ -17,7 +17,7 @@ lazy val root = (project in file("."))
       "dev.zio" %% "zio-test" % "2.0.0-RC6" % Test
     ),
     testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework"),
-    publishTo := Some("GitHub <GITHUB_OWNER> Apache Maven Packages" at "https://maven.pkg.github.com/Adam-Kurzawa/alphabook_commons"),
+    publishTo := Some("GitHub Adam-Kurzawa Apache Maven Packages" at "https://maven.pkg.github.com/Adam-Kurzawa/alphabook_commons"),
     publishMavenStyle := true,
     credentials += Credentials(
       "GitHub Package Registry",
