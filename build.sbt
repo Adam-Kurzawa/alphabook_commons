@@ -17,12 +17,12 @@ lazy val root = (project in file("."))
       "dev.zio" %% "zio-test" % "2.0.0-RC6" % Test
     ),
     testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework"),
-    publishTo := Some("GitHub <GITHUB_OWNER> Apache Maven Packages" at "https://maven.pkg.github.com/<GITHUB_OWNER>/<GITHUB_PROJECT>"),
+    publishTo := Some("GitHub <GITHUB_OWNER> Apache Maven Packages" at "https://maven.pkg.github.com/Adam-Kurzawa/alphabook_commons"),
     publishMavenStyle := true,
     credentials += Credentials(
       "GitHub Package Registry",
       "maven.pkg.github.com",
-      "<GITHUB_OWNER>",
+      "Adam-Kurzawa",
       System.getenv("GITHUB_TOKEN")
     )
   )
